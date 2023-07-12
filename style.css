@@ -1,0 +1,157 @@
+body {
+  background-color: #000000;
+  font-family: 'Verdana';
+  color: #ffffff;
+  background: linear-gradient(to bottom, #7c7c7c, #131212);
+  background-attachment: fixed;
+  margin: 0px;
+}
+
+#header {
+  color: #ffffff;
+  font-family: 'Verdana';
+  grid-row: 1 / 2;
+  grid-column: 2 / -2;
+
+}
+
+#header h1 {
+  line-height: 140%;
+  padding: .5rem;
+  background-repeat: no-repeat;
+  padding-left: 1em;
+  background-origin: content-box;
+  margin:0;
+}
+
+#nav {
+  font-weight: bold;
+  background-color: #8b8a8a;
+  grid-row: 2 / 3;
+  grid-column: 2 / -2;
+  position:sticky;
+  top: 0;
+}
+#nav ul {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  list-style-type: none;
+}
+
+#nav ul li {
+  width: 100%;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem 0rem;
+  display: block;
+  text-align: center;
+  background-color:#8b8a8a;
+  transition: background-color 0.5s ease-out;
+}
+
+#nav a:hover {
+  background-color: #2c2c2c;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 5fr;
+}
+
+a {
+  text-decoration: none;
+}
+
+#Homeimg {
+  height: 300px;
+  width: 350px;
+  background-size: cover;
+  background-image: url(kwest.jpg);
+  float: right;
+  padding-left: 2rem;
+  grid-row: 3 / 4;
+  grid-column: 2 / -2;
+}
+
+#img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two equal-width columns */
+}
+
+#ELimg {
+  height: 300px;
+  width: 350px;
+  background-size: cover;
+  background-image: url(kwestchild.jpeg);
+  padding-left: 2rem;
+}
+
+#ELimger {
+  height: 300px;
+  width: 350px;
+  background-size: cover;
+  background-image: url(Kanye-making-beats.jpg);
+  padding-right: 2rem;
+}
+#MCimg {
+  height: 300px;
+  width: 350px;
+  background-size: cover;
+  background-image: url(kwestbear.webp);
+  padding-right: 2rem;
+}
+
+#awardimg {
+  height: 300px;
+  width: 350px;
+  background-size: cover;
+  background-image: url(kwestgrammy.webp);
+  padding-right: 2rem;
+}
+
+#discoimg {
+  height: 300px;
+  width: 500px;
+  background-size: cover;
+  background-image: url(discography.jpg);
+  padding-right: 2rem;
+}
+
+@media (max-width: 992px) {
+  /* Styles for viewports less than 992px */
+  /* Modify the center column within the grid */
+  #header {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  
+  #img {
+    float: none;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  #ELimger {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for viewports less than 768px */
+  /* Modify the center column within the grid */
+  #header {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+  
+  #img {
+    float: none;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}
